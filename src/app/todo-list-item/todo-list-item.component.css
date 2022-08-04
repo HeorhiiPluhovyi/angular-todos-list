@@ -42,10 +42,17 @@ input:checked::before {
 }
 
 button {
-  height: 100 ;
+  color: #fc9398;
+  font-size: large;
+  font-weight: bold;
+  height: 50px;
+  width: 70px;
   cursor: pointer;
   display: none;
   margin-left: auto;
+  background-color: #f8e6d6;
+  border: 5px solid #fc9398;
+  border-radius: 20px;
 }
 
 div:hover button{
@@ -53,6 +60,7 @@ div:hover button{
 }
 
 p {
+  margin-left: 20px;
   display: display block;
 }
 

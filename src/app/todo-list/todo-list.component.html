@@ -1,17 +1,19 @@
 <main>
-  <h1>TODOLIST</h1>
-  <ul *ngIf="todoList.length === 0 ? false : true; else empty">
-    <li
-      *ngFor="let todo of todoList; let i = index"
-      [ngClass]="i % 2 === 0 ? 'red' : 'blue'"
-    >
-      <app-todo-list-item
-        [item]="todo"
-        [itemIndex]="i"
-        (delTodoItem)="delTodoItem($event)"
-      ></app-todo-list-item>
-    </li>
-  </ul>
+  <h1>My Todos</h1>
+  <div>
+    <ul *ngIf="todoList.length === 0 ? false : true; else empty">
+      <li
+        *ngFor="let todo of todoList; let i = index"
+        [ngClass]="i % 2 === 0 ? 'honest' : 'odd'"
+      >
+        <app-todo-list-item
+          [item]="todo"
+          [itemIndex]="i"
+          (delTodoItem)="delTodoItem($event)"
+        ></app-todo-list-item>
+      </li>
+    </ul>
+  </div>
   <ng-template #empty>
     <p>Your list is empty...</p>
   </ng-template>

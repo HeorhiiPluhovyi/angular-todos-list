@@ -7,20 +7,7 @@ import { TodoItem } from '../todo-item';
   styleUrls: ['./todo-list.component.css']
 })
 export class TodoListComponent implements OnInit {
-  todoList: TodoItem[] = [
-    {
-      todoName: 'Study aggular',
-      isCompleted: false
-    },
-    {
-      todoName: 'English practise',
-      isCompleted: false
-    },
-    {
-      todoName: 'Wet out of bed',
-      isCompleted: true
-    },
-  ];
+  todoList: TodoItem[] = [];
 
   constructor() { }
 

@@ -1,7 +1,36 @@
-.red {
-  background-color: red;
+main {
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 500px;
 }
 
-.blue {
-  background-color: blue;
+h1 {
+  margin: 0 auto 20px;
+  padding: 0 auto;
+}
+
+div {
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border-radius: 20px;
+  display: block;
+}
+
+.honest {
+  background-color: #fc9398;
+}
+
+.odd {
+  background-color: #f8e6d6;
 }
