@@ -1,0 +1,13 @@
+<div>
+  <label>
+    <input
+      type="checkbox"
+      [(ngModel)]="isCompleated"
+      (click)="compleated()"
+    >
+  </label>
+  <p
+  [ngClass]="item.isCompleted ? 'completed' : 'notCompleted'"
+  >{{ item.todoName }}</p>
+  <button (click)="del()">Delete</button>
+</div>

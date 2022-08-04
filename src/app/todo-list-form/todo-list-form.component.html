@@ -1,0 +1,11 @@
+<form action="">
+  <input
+    type="text"
+    name="todoName"
+    placeholder="What needs to be done?"
+    [(ngModel)]="inputText"
+    id="todo-input-text"
+  >
+  <label for="todo-input-text"></label>
+  <button (click)="add()">Add</button>
+</form>
